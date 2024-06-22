@@ -17,14 +17,14 @@ Clone the repository
 ### STEP 01- Create a docker Image with tag
 
 ```bash
-docker build -t diabetes_prediction_app:0.0.1 .
+docker build -t iris_app:0.0.1 .
 ```
 
 
 ### STEP 02- Run the Image
 
 ```bash
-docker run -p 5000:5000 diabetes_prediction_app:0.0.1
+docker run -p 5000:5000 iris_app:0.0.1
 ```
 
 # Basic Docker Command
