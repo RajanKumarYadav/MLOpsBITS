@@ -1,29 +1,31 @@
-# Data Version Control with DVC
-
-## Prerequisite & Installations
-
-1. Basic git concepts and commands
-2. Python virtual environment
-3. pip install dvc
+# Docker Image Creation for Flask ML APP
 
 
-# Workflows
+## Workflows
+
+1. Create app directory 
+2. Update or Copy paste all your files (Flask App, Trained Model, config files)
+3. Create requirements.txt with all your dependencies
+4. Create Docker file
 
 
-### STEP 01- Create directory using mkdir 
+# How to Run ?
+
+
+Clone the repository
+
+### STEP 01- Create a docker Image with tag
+
 ```bash
-mkdir <directory_name>
-```
-### STEP 02- Go to above directory and initialize git in it
-```bash
-git init
-```
-### STEP 02- Go to above directory and initialize dvc in it
-```bash
-dvc init
+docker build -t diabetes_prediction_app:0.0.1 .
 ```
 
 
+### STEP 02- Run the Image
+
+```bash
+docker run -p 5000:5000 diabetes_prediction_app:0.0.1
+```
 
 # Basic Docker Command
 
